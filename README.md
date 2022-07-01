@@ -1,7 +1,6 @@
 # Image-Text-Detection-Jupyter-Notebook-Python
-Image text detection with Jupyter Notebook Python
 
-ABSTRACT
+## ABSTRACT
 
 This project will be very useful as it will save time and effort of typing from an image.
 Image processing is often viewed as arbitrarily manipulating an image to achieve an aesthetic standard or to support a preferred reality. However, image processing is more accurately defined as a means of translation between the human visual system and digital imaging devices. 
@@ -17,7 +16,7 @@ Using the Pytesseract library in Python, we made an image processing of a photo 
 
 Scope :  This application could be time-saving for giant organizations which will fetch the text from images.It can open the world of “paperless documentation” which also helps to upgrade the storage.It can also help in the automation process as it can fetch the text from the images themselves.
 
-Table of Contents
+## Table of Contents
 
 1.	Introduction	
 2.	Methodology / System Design
@@ -41,7 +40,7 @@ LIST OF FIGURES
 ![Resim4](https://user-images.githubusercontent.com/85889196/171006896-3f92673b-a806-4fc2-8199-935184481da2.png)
 
 
-1. INTRODUCTION 
+## 1. INTRODUCTION 
 
 Image Processing with the Tesseract Library
 Python-Tesseract is an optical character recognition (OCR) tool for python. That is, it will recognize and “read” the text embedded in images. Tesseract - an open-source OCR engine that has gained popularity among OCR developers. Even though it can be painful to implement and modify sometimes, there weren’t too many free and powerful OCR alternatives on the market for the longest time. Tesseract began as a Ph.D. research project in HP Labs, Bristol. It gained popularity and was developed by HP between 1984 and 1994. In 2005 HP released Tesseract as an open-source software. Since 2006 it is developed by Google.
@@ -119,7 +118,7 @@ If we want boxes around words instead of characters, the function image_to_data 
 
 To change your page segmentation mode, change the --psm argument in your custom config string to any of the above mentioned mode codes.
 
-2. METHODOLOGY / SYSTEM DESIGN
+## 2. METHODOLOGY / SYSTEM DESIGN
 
 Tesseract works best when there is a clean segmentation of the foreground text from the background. In practice, it can be extremely challenging to guarantee these types of setup. There are a variety of reasons you might not get good quality output from Tesseract like if the image has noise on the background. The better the image quality (size, contrast, lightning) the better the recognition result. It requires a bit of preprocessing to improve the OCR results, images need to be scaled appropriately, have as much image contrast as possible, and the text must be horizontally aligned. Tesseract OCR is quite powerful but does have the following limitations.
 
@@ -139,7 +138,7 @@ Tesseract works best when there is a clean segmentation of the foreground text f
 
 •	It does not expose information about what font family text belongs to.
 
-OPENING A SIMPLE IMAGE
+## OPENING A SIMPLE IMAGE
 -	Import cv2.
 -	Import pytesseract.
 -	Save the test image in the same directory.
@@ -149,7 +148,7 @@ OPENING A SIMPLE IMAGE
 -	Add a cv2.waitKey(0) to display image for infinity.
 
 
-CONVERTING IMAGE TO STRING
+## CONVERTING IMAGE TO STRING
 -	Import cv2, pytesseract.
 -	Save the test image in the same directory.
 -	Create a variable to store the image using cv2.imread() function and pass the name of the image as parameter.
@@ -158,7 +157,7 @@ CONVERTING IMAGE TO STRING
 -	Print the string.
 -	Add a cv2.waitKey(0) to display image for infinity.
 
-PRINTING THE EXACT POSITION OF TEXT/NUMBERS
+## PRINTING THE EXACT POSITION OF TEXT/NUMBERS
 	
   image_to_boxes() function creates imaginary boxes around each text and returns four values 	for each character, which are as follows:
 
@@ -178,7 +177,7 @@ d)	Diagonal point of y coordinate
 -	Print the string.
 -	Add a cv2.waitKey(0) to display image for infinity.
 
-DRAW BOXES AROUND THE DETECTED CHARACTERS AND LABEL THEM
+## DRAW BOXES AROUND THE DETECTED CHARACTERS AND LABEL THEM
 	
   To add boxes around the text and label we need two function of OpenCV:
 
@@ -202,7 +201,7 @@ b)	cv2.putText(‘image_name’, x_coordinate, y_coordinate, ‘font_name’, 	f
 
 
 
-3.RESULTS
+## 3.RESULTS
 
 Just as deep learning has impacted nearly every facet of computer vision, the same is true for character recognition and handwriting recognition. Deep learning based models have managed to obtain unprecedented text recognition accuracy, far beyond traditional information extraction and machine learning image processing approaches.
 
