@@ -24,7 +24,7 @@ Scope :  This application could be time-saving for giant organizations which wil
 
 
 
-LIST OF FIGURES
+## LIST OF FIGURES
 
 
 
