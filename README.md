@@ -68,6 +68,7 @@ Pytesseract is a wrapper for Tesseract-OCR Engine. It is also useful as a stand-
 
 The script below will give you bounding box information for each character detected by tesseract during OCR.
 
+```python
 import cv2
 
 import pytesseract
@@ -87,7 +88,7 @@ for b in boxes.splitlines():
 cv2.imshow('img', img)
 
 cv2.waitKey(0)
-
+```
 If we want boxes around words instead of characters, the function image_to_data will come in handy. There are several ways a page of text can be analysed. The tesseract api provides several page segmentation modes if you want to run OCR on only a small region or in different orientations, etc.
 
 •	Orientation and script detection (OSD) only.
