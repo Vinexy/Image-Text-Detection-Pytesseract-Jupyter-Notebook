@@ -1,4 +1,4 @@
-# Image-Text-Detection-Jupyter-Notebook-Python
+# Image-Text-Detection-Jupyter-Notebook-Python 
 
 ## ABSTRACT
 
